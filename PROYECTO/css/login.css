@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 90%;
+}
+
+section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(225deg,#1ee98a2a,#03a8f428);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 7.5%;
+    left: 30%;
+    width: 80%;
+    height: 74%;
+    object-fit: cover;
+}
+
+section .contentBx{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+section .contentBx .formBx{
+ width: 75%;
+ padding: 37px;
+ background: rgb(255 255 255 / 90%);
+}
+
+section .contentBx .formBx h2{
+    color: #607b8d;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #006633;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+
+section .contentBx .formBx .inputBx span{      
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607b8d;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;    
+}
+
+section .contentBx .formBx .inputBx input{
+    width: 100% ;
+    padding: 5px 10px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607b8d;
+    background: transparent;
+    border-radius: 30px; ;
+}
+
+section .contentBx .formBx .inputBx input[type ="submit"]{
+    background: #006633;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section .contentBx .formBx .inputBx input[type ="submit"]:hover{
+    background: #006633ad;
+}
+
+section .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color: #607b8d;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+section .contentBx .formBx .inputBx p{
+    color: #607b8d;
+}
+
+section .contentBx .formBx .inputBx p a{
+    color: #006633;
+}
+
+@media (max-width: 768px){
+    section .imgBx {
+        position: absolute;
+        top: 31px;
+        left:-20%;
+        width: 100%;
+        height:  100%;
+    }
+
+    section .contentBx {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    section .contentBx .formBx {
+        width: 60%;
+        padding: 10px;
+        /* width: 0; */
+        background: rgb(255 255 255 / 90%);
+        /* margin: 10px; */
+        border-radius: 5px;
+    }   
+}

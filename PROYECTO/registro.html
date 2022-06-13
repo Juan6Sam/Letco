@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono de la página-->
+    <link rel="shortcut icon" href="/IMG/iphone.ico">
+    <!--Titulo de la página-->
+    <title>Registro</title>
+    <!--Tipo de letra-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!--Conexión con CSS-->
+    <link rel="stylesheet" href="/css/iniciolog.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <!--Mando a llamar Script-->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+    <form method="get" action="registro.php">
+        <div>
+            <header class="header">
+                <nav class="nav">
+                    <div class="container logo-nav-conteiner">
+                        <div class="iconeCarrito">
+                            <a href="/login.html">
+                                <i class="icon-Regreso"></i>
+                            </a>
+                        </div>
+                </nav>
+            </header>
+
+            <section>
+                <div class="imgBx">
+                    <img src="/img/tres.jpg">
+                </div>
+
+                <div class="contentBx">
+                    <div class="formBx">
+                        <h2>Registro</h2>
+                        <form>
+                            <div class="inputBx">
+                                <span>Nombre</span>
+                                <input type="text" name="nombre" id="nombre" required="required">
+                            </div>
+
+                            <div class="inputBx">
+                                <span>Apellido</span>
+                                <input type="text" name="apellido" id="apellido" required="requiered">
+                            </div>
+
+                            <div class="inputBx">
+                                <span>Grupo</span>
+                                <input type="integer" name="grupo" id="grupo" required="requiered">
+                            </div>
+
+                            <div class="remember">
+                                <span>Carrera<br></span>
+                                <select name="carrera" id="carrera">
+                                    <option value="value">Seleccionar Carrera</option>
+                                    <option value="carrera" name="carrera" id="carrera">Ingeniería en Sistemas Computacionales</option>
+                                    <option value="carrera" name="carrera" id="carrera">Ingeniería Industrial</option>
+                                    <option value="carrera" name="carrera" id="carrera">Ingeniería en Informática</option>
+                                    <option value="carrera" name="carrera" id="carrera">Ingeniería Electromecánica</option>
+                                    <option value="carrera" name="carrera" id="carrera">Ingenieria Electrónica</option>
+                                    <option value="carrera" name="carrera" id="carrera">Ingenieria en Administración</option>
+                                </select>
+                            </div>
+
+                            <div class="inputBx">
+                                <span>Correo electronico</span>
+                                <input type="text" name="email" id="email">
+                            </div>
+
+                            <div class="inputBx">
+                                <span>Matricula</span>
+                                <input type="text" name="matricula" id="matricula">
+                            </div>
+
+                            <div class="inputBx">
+                                <s0pan>Ingresa tu contraseña</span>
+                                    <input type="password" name="contraseña" id="contraseña" pattern="[A-Za-z0-9P.$_&]{6,16}" required="true">
+                            </div>
+
+                            <div class="inputBx">
+                                <p>Los terminos y condiciones <a href="/terminosycondiciones.html">Seguir leyendo</a></p>
+                            </div>
+
+                            <div class="remember">
+                                <label><input type="checkbox" name="terminos" required = "requiered">Acepto Terminos y condiciones</label>
+                            </div>
+
+                            <div class="inputBx">
+                                <input type="submit" value="Crear cuenta">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            </div>
+    </form>
+</body>
+
+</html>

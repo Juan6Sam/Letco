@@ -1,0 +1,73 @@
+<!DOCTYPE html>>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono de la página-->
+    <link rel="shortcut icon" href="/index.html">
+    <!--Titulo de la página-->
+    <title>Login</title>
+    <!--Tipo de letra-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!--Conexión con CSS-->
+    <link rel="stylesheet" href="/css/iniciolog.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!--Mando a llamar Script-->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container logo-nav-conteiner">
+                <div class="iconeCarrito">
+                    <a href="/index.html">
+                        <i class="icon-Regreso"></i>
+                    </a>
+                </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="imgBx">
+            <img src="/img/dos.jpg">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Inicio de sesion</h2>
+                <form>
+                    <div class="inputBx">
+                        <span>Correo electronico</span>
+                        <input type="text" name="$correo" required=" true ">
+                    </div>
+
+                    <div class="inputBx">
+                        <span>Ingresa tu contraseña</span>
+                        <input type="password" name="$password" pattern="[A-Za-z0-9P.$_&]{6,16}" required="true">
+                    </div>
+
+                    <div class="remember">
+                        <label><input type="checkbox" name=""> Recordar contraseña</label>
+                    </div>
+
+                    <div class="inputBx">
+                        <input type="submit" value="Ingresar" name="" href="/registro.html">
+                    </div>
+
+                    <div class="inputBx">
+                        <p>¿Olvidaste tu contraseña?<a href="#">Da clic aquí</a></p>
+                    </div>
+
+                    <div class="inputBx">
+                        <p>¿No tines cuenta? <a href="/registro1.php">Registrate aquí</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

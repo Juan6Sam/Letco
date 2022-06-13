@@ -1,0 +1,30 @@
+:root{
+    --background: linear-gradient(135deg, #299d0642 0, #4bca245b 100%);
+    --color-primary: #4ACA24;
+    --color-secondary: #299D06;
+    --boton-pading: 20px 40px;
+}
+
+body{
+    font-family: 'Releway', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav__items{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--cta{
+    border: 1px solid rgb(255, 255, 255);
+}
